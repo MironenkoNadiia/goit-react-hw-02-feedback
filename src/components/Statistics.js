@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function Statistics({ good, neutral, bad, total, persentage }) {
+function Statistics({ good, neutral, bad, total='', positiveFeedback='' }) {
   return (
     <>
       <ul>
@@ -8,9 +8,7 @@ function Statistics({ good, neutral, bad, total, persentage }) {
         <li>Neutral: {neutral}</li>
         <li>Bad: {bad}</li>
         <li>Total: {total}</li>
-        <li>
-          Positive Feedback: {persentage} %
-        </li>
+        <li>Positive Feedback: {positiveFeedback} %</li>
       </ul>
     </>
   );
@@ -21,7 +19,7 @@ Statistics.propTypes = {
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
   total: PropTypes.number,
-  persentage: PropTypes.number,
+  positiveFeedback: PropTypes.number,
 };
 
 export default Statistics;

@@ -26,5 +26,5 @@ export default function Button({ type, onLeaveFeedback }) {
 }
 
 Button.propTypes = {
-  type: PropTypes.string,
+  type: PropTypes.string.isRequired,
 };

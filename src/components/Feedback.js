@@ -53,7 +53,7 @@ export default class Feedback extends Component {
               neutral={this.state.neutral}
               bad={this.state.bad}
               total={this.state.total}
-              percentage={this.state.positiveFeedback}
+              positiveFeedback={this.state.positiveFeedback}
             />
           ) : (
             <Notification message={this.props.message} />

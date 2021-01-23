@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function Notification({ message }) {
+function Notification({ message='' }) {
   return <span>{message}</span>;
 }
 
